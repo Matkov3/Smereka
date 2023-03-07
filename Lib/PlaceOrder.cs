@@ -52,13 +52,13 @@ namespace Lib
             CommentsInput.SendKeys(customerInfo.Сomments);
             AdressInput.SendKeys(Keys.Tab);
             OblastSelect.SelectByText(customerInfo.Oblast);
-            Thread.Sleep(500);
+            Thread.Sleep(TimeSpan.FromSeconds(7));
 
             GorodSelect.SelectByText(customerInfo.Gorod);
-            Thread.Sleep(700);
+            Thread.Sleep(TimeSpan.FromSeconds(7));
 
             Novaya_PochtaSelect.SelectByText(customerInfo.Novaya_Pochta);
-            Thread.Sleep(500);
+            Thread.Sleep(TimeSpan.FromSeconds(7));
 
            
         }

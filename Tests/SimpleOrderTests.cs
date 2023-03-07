@@ -34,7 +34,7 @@ namespace Tests
             var availablePrices = treeSelect.Prices();
 
 
-            var priceToClick = availablePrices.ElementAt(1);
+            var priceToClick = availablePrices.ElementAt(3);
 
             treeSelect.TreeClick(priceToClick);
 
@@ -44,15 +44,14 @@ namespace Tests
 
             
             BasketProducts basketProducts = new BasketProducts();
-            //basketProducts.PlaceOrder();
-            basketProducts.LastPurshaseB();
-            
+            basketProducts.PlaceOrder();
 
-            //new PlaceOrder().FillCustomer();
+
+            new PlaceOrder().FillCustomer();
 
             //new PlaceOrder().LastPurshasPO();
 
-            //new PlaceOrder().ClickOrderSubmit();
+            new PlaceOrder().ClickOrderSubmit();
 
 
 

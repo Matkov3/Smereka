@@ -17,12 +17,10 @@ namespace Lib
             return nameTitle;
         }
 
-          
-        
 
-        public void SelectTree()
+        public void SelectTreeRecommendedTest()
         {
-            var colections = Container.FindElements(By.CssSelector(".li"));
+            var colections = Container.FindElements(By.CssSelector(".right .li a.add"));
 
             Random random = new Random();
             var index = random.Next(0, colections.Count);
@@ -30,5 +28,17 @@ namespace Lib
             colections.ElementAt(index).Click();
                
         }
+
+        public void SelectTree()
+        {
+            var treeColections = Container.FindElements(By.CssSelector(".li a.wrap"));
+
+            var indexTree = new Random().Next(0, treeColections.Count);
+
+            treeColections.ElementAt(indexTree).Click();
+
+        }
+
+        
     }
 }
